@@ -6,8 +6,8 @@ const stats = ["100+ Courses", "Expert Lectures", "LifeTime Access"];
 
 function App() {
   return (
-    <div className="flex justify-center align-middle items-start md:items-center dark bg-background h-screen">
-      <section className="herosection text-foreground py-10 px-3 text-start gap-6 md:min-h-[40rem] flex flex-col md:justify-center justify-start align-middle items-start md:items-center md:gap-2">
+    <div className="flex justify-center align-middle items-start  dark bg-background ">
+      <section className="herosection md:p-32 p-5 text-foreground h-full md:max-h-[50rem] max-h-[40rem] overflow-clip md:text-center text-start gap-6  flex flex-col  justify-start align-middle items-start md:items-center md:gap-2">
         <h1 className="maintext md:text-7xl text-4xl font-semibold">
           Unlock Your Potential with{" "}
           <span className="text-primary">Learnit</span>
@@ -16,9 +16,11 @@ function App() {
           Discover a world of knowledge with our cutting-edge Learning
           Management System. Learn, grow, and succeed.
         </p>
-        <div className="ctabuttons flex md:flex-row flex-col w-full  gap-2 py-5">
-          <Button>Get Started</Button>
-          <Button variant={"outline"}>Learn More</Button>
+        <div className="ctabuttons flex md:flex-row flex-col w-full   justify-center items-center align-middle  gap-2 py-5">
+          <Button className="w-full md:w-fit">Get Started</Button>
+          <Button className="w-full md:w-fit" variant={"outline"}>
+            Learn More
+          </Button>
         </div>
         <div className="stats flex justify-center align-middle items-center md:gap-3 gap-1 ">
           {stats.map((stat, index) => (
@@ -30,6 +32,16 @@ function App() {
               <span className="">{stat}</span>
             </div>
           ))}
+        </div>
+
+        <div className="rounded-[38px] border-8 border-primary mt-10">
+          <img
+            className="rounded-[30px]"
+            style={{
+              perspective: "1000px",
+            }}
+            src="/src/assets/WhatsApp Image 2024-10-21 at 02.58.15_6886f7a1.jpg"
+          />
         </div>
       </section>
     </div>
