@@ -1,6 +1,7 @@
 import { CircleCheckBig } from "lucide-react";
 import { Button } from "./ui/button";
 const stats = ["100+ Courses", "Expert Lectures", "LifeTime Access"];
+import dashboardImage from "../assets/image.png";
 
 const Hero = () => {
   return (
@@ -38,7 +39,7 @@ const Hero = () => {
             style={{
               perspective: "1000px",
             }}
-            src="/src/assets/WhatsApp Image 2024-10-21 at 02.58.15_6886f7a1.jpg"
+            src={dashboardImage}
           />
         </div>
       </section>

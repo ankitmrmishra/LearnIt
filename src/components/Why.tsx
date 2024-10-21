@@ -1,4 +1,4 @@
-import { Book, PlayCircle, Users } from "lucide-react";
+import { ArrowRight, Book, PlayCircle, Users } from "lucide-react";
 import { Button } from "./ui/button";
 import { useState } from "react";
 import { Card, CardContent, CardDescription, CardHeader } from "./ui/card";
@@ -17,12 +17,12 @@ const Why = () => {
           skill development.
         </p>
       </div>
-      <div className="answer_of_why flex  md:flex-row flex-col md:gap-10 gap-3 py-10 w-full ">
+      <div className="answer_of_why flex  md:flex-row flex-col justify-center align-middle items-center md:gap-10 gap-3 py-10 w-full ">
         {features.map((items) => (
           <Button
             variant={activeTab === items.id ? "default" : "secondary"}
             onClick={() => setActiveTab(items.id)}
-            className="flex items-center space-x-2 w-full"
+            className="flex items-center space-x-2 md:w-fit w-full"
             key={items.id}
           >
             {items.icon} {items.title}
@@ -40,7 +40,7 @@ const Why = () => {
             }}
             transition={{ duration: 0.5 }}
             className={`${
-              activeTab === feature.id ? "block w-full" : "hidden"
+              activeTab === feature.id ? "block md:min-w-[60rem]" : "hidden"
             }`}
           >
             <Card className={"mb-8 "} id={feature.id}>
@@ -71,6 +71,12 @@ const Why = () => {
           </motion.div>
         ))}
       </div>
+      <Button
+        className="w-full md:w-fit text-foreground flex justify-center align-middle items-center"
+        variant={"outline"}
+      >
+        Enroll Now <ArrowRight />
+      </Button>
     </div>
   );
 };
