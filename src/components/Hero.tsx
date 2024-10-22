@@ -33,9 +33,9 @@ const Hero = () => {
           ))}
         </div>
 
-        <div className="rounded-[38px] border-8 border-primary mt-10">
+        <div className="md:rounded-[38px] rounded-xl md:border-8 border-4 border-primary mt-10">
           <img
-            className="rounded-[30px]"
+            className="md:rounded-[30px] rounded-lg"
             style={{
               perspective: "1000px",
             }}

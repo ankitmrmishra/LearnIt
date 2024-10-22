@@ -12,8 +12,13 @@ import { motion } from "framer-motion";
 const Testimonials = () => {
   return (
     <div className="flex flex-col justify-center align-middle items-center gap-32 ">
-      <div className="heading md:text-7xl text-3xl  text-foreground text-center  ">
-        Our Success Stories
+      <div className="heading flex flex-col p-3">
+        <span className="text-7xl font-bold text-foreground opacity-50 ">
+          Our Success Stories
+        </span>
+        <span className="subpara text-muted-foreground md:text-xl text-lg md:w-[40rem] ">
+          This is the story of Few Among Thousands
+        </span>
       </div>
       <div className="md:grid grid-cols-3 gap-3 relative overflow-hidden h-[50rem] flex justify-start align-middle items-center  ">
         <div className="pointer-events-none absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-background z-10" />
