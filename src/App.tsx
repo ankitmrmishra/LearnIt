@@ -2,6 +2,7 @@ import "./App.css";
 import CourseDisplay from "./components/CourseDisplay";
 
 import Hero from "./components/Hero";
+import Testimonials from "./components/Testimonials";
 
 import Why from "./components/Why";
 
@@ -11,6 +12,7 @@ function App() {
       <Hero />
       <Why />
       <CourseDisplay />
+      <Testimonials />
     </div>
   );
 }
