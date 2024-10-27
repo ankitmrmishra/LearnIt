@@ -131,8 +131,8 @@ export default function CourseSwiper() {
   ];
 
   return (
-    <div className="md:p-10 flex flex-col justify-center align-middle items-center gap-3 max-w-max py-10">
-      <div className="headingtext flex flex-col justify-center items-start align-middle gap-2  md:w-full w-[20rem] text-start ">
+    <div className="md:p-10  flex flex-col justify-center align-middle items-center gap-3 max-w-max py-10">
+      <div className="headingtext flex flex-col justify-center items-start align-middle gap-2  md:w-full w-[20rem] text-start  ">
         <span className="text-7xl font-bold text-foreground opacity-50">
           Our Top Selling Courses
         </span>
