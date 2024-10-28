@@ -12,7 +12,7 @@ import { motion } from "framer-motion";
 const Testimonials = () => {
   return (
     <div className="flex flex-col justify-center align-middle items-center gap-32 ">
-      <div className="heading flex flex-col p-3">
+      <div className="heading flex flex-col p-3 text-center">
         <span className="text-7xl font-bold text-foreground opacity-50 ">
           Our Success Stories
         </span>

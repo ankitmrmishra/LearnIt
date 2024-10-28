@@ -33,7 +33,7 @@ export default function Component() {
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
           Why
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">
+          <span className="text-transparent bg-clip-text bg-primary">
             {" "}
             LearnIt
           </span>
