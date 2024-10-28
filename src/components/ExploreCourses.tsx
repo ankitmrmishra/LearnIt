@@ -60,7 +60,7 @@ export const CourseCardTab: React.FC<CourseCardTabProps> = ({
 }) => {
   return (
     <div className="w-full">
-      <Card className="md:w-96 w-full md:h-52 flex flex-col justify-between align-middle items-start">
+      <Card className="md:w-96 w-full md:h-full flex flex-col justify-between align-middle items-start">
         <CardHeader>
           <CardTitle className="text-3xl">{course}</CardTitle>
         </CardHeader>
